@@ -1,0 +1,60 @@
+<div class="examBox">
+    <div class="examhead text-center"><h2>اختبار {{subject.name}}</h2></div>
+    @for (item of subject.questions; track item  ) {
+        <div class="quizBox">
+            <strong ><span class="text-danger"> السؤال {{$index + 1}}</span> {{item.question}}</strong>
+            <div class="row mt-3" >
+                <div class="col-md-6 col-sm-12">
+                    @if(user?.role== 'students' && !showResult  && validExame) {
+                        
+                        <mat-radio-button value="{{item.answer1}}" name="{{$index}}"  (change)="getAnswer($event)"  color="warn"></mat-radio-button>
+                    }
+                    <label> {{item.answer1}}</label>
+                </div>
+    
+                <div class="col-md-6 col-sm-12">
+                    @if(user?.role== 'students' && !showResult  && validExame) {
+                        
+                        <mat-radio-button value="{{item.answer2}}" name="{{$index}}"  (change)="getAnswer($event)"  color="warn"></mat-radio-button>
+                    }
+                    <label> {{item.answer2}}</label>
+                </div>
+    
+                <div class="col-md-6 col-sm-12">
+                    @if(user?.role== 'students' && !showResult  && validExame) {
+
+                        <mat-radio-button value="{{item.answer3}}" name="{{$index}}" (change)="getAnswer($event)" color="warn"></mat-radio-button>
+                    }
+                    <label>{{item.answer3}}</label>
+                </div>
+    
+                <div class="col-md-6 col-sm-12">
+                    @if(user?.role== 'students' && !showResult  && validExame) {
+
+                        <mat-radio-button value="{{item.answer4}}" name="{{$index}}"  (change)="getAnswer($event)"  color="warn"></mat-radio-button>
+                    }
+                    <label>{{item.answer4}}</label>
+                </div>
+              
+            </div>
+            @if (user?.role== 'doctor') {
+               <button mat-raised-button  class="btn btn-danger" (click)="delete($index)"  >حذف</button>
+            }
+            <hr>
+        </div>
+    }
+    @if(user?.role== 'students') {
+        <div class="text-center">
+            @if(showResult || !validExame){
+                <div class="fs-3 my-3"> {{subject.questions.length}} / {{total}}   </div>
+
+            }
+            @if(!showResult &&  validExame){
+                <button class="btn btn-success px-5 fs-5" (click)="getTotall()"> النتيجة</button>
+
+            }
+        </div>
+    }
+    
+
+</div>

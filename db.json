@@ -1,0 +1,148 @@
+{
+  "students": [
+    {
+      "username": "yousef",
+      "email": "yousef@123.com",
+      "password": "123",
+      "subjects": [
+        {
+          "name": "عربى",
+          "id": "12d8",
+          "degree": 1
+        },
+        {
+          "name": "رياضيات",
+          "id": "aac2",
+          "degree": 2
+        }
+      ],
+      "id": "6120"
+    },
+    {
+      "username": "abdo",
+      "email": "abdo@123.com",
+      "password": "123",
+      "subjects": [
+        {
+          "name": "رياضيات",
+          "id": "aac2",
+          "degree": 2
+        }
+      ],
+      "id": "c47d"
+    },
+    {
+      "id": "a614",
+      "username": "ahmed",
+      "email": "ahmed@123.com",
+      "password": "1234"
+    },
+    {
+      "id": "c008",
+      "username": "adham",
+      "email": "adham@123.com",
+      "password": "123"
+    }
+  ],
+  "doctor": [
+    {
+      "id": "4302",
+      "username": "aa",
+      "email": "admin@admin.com",
+      "password": "123"
+    }
+  ],
+  "subject": [
+    {
+      "name": "عربى",
+      "questions": [
+        {
+          "question": "درجة المادة",
+          "answer1": "25",
+          "answer2": "50",
+          "answer3": "75",
+          "answer4": "100",
+          "correctAnswer": "100"
+        }
+      ],
+      "id": "12d8"
+    },
+    {
+      "id": "aac2",
+      "name": "رياضيات",
+      "questions": [
+        {
+          "question": "1 +1",
+          "answer1": "1",
+          "answer2": "2",
+          "answer3": "3",
+          "answer4": "4",
+          "correctAnswer": "2"
+        },
+        {
+          "question": "2 + 2",
+          "answer1": "3",
+          "answer2": "4",
+          "answer3": "6",
+          "answer4": "5",
+          "correctAnswer": "4"
+        }
+      ]
+    },
+    {
+      "id": "56b3",
+      "name": "eng",
+      "questions": [
+        {
+          "question": "aa",
+          "answer1": "aa",
+          "answer2": "bb",
+          "answer3": "cc",
+          "answer4": "dd",
+          "correctAnswer": "aa"
+        },
+        {
+          "question": "rr",
+          "answer1": "rr",
+          "answer2": "ff",
+          "answer3": "hh",
+          "answer4": "gg",
+          "correctAnswer": "rr"
+        }
+      ]
+    },
+    {
+      "id": "8e41",
+      "name": "عربى",
+      "questions": [
+        {
+          "question": "اا",
+          "answer1": "اا",
+          "answer2": "بب",
+          "answer3": "تت",
+          "answer4": "يي",
+          "correctAnswer": "اا"
+        }
+      ]
+    },
+    {
+      "id": "db78",
+      "name": "ff",
+      "questions": [
+        {
+          "question": "ff",
+          "answer1": "ff",
+          "answer2": "asd",
+          "answer3": "sada",
+          "answer4": "ssfs",
+          "correctAnswer": "ff"
+        }
+      ]
+    }
+  ],
+  "login": [
+    {
+      "id": "4302"
+    }
+  ]
+}
